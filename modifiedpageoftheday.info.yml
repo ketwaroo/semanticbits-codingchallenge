@@ -1,0 +1,7 @@
+name: SemanticBits - Current Modified Pages
+type: module
+description: Adds block that will render a list of pages that were modified on current day.
+package: Custom
+core: 8.x
+dependencies:
+  - block

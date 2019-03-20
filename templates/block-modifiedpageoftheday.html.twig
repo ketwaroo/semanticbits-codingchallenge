@@ -1,0 +1,14 @@
+{#
+vars
+    `posts` - array of nodes
+#}
+
+{% if posts is empty %}
+    {{ 'No updates today.'|t }}
+{% else %}
+    <ul>
+        {% for post in posts %}
+            <li><a href="{{ path('entity.node.canonical', {'node': post.id}) }}"> {{ post.getTitle() }}</a> {{ 'updated on'|t }} {{ post.updated.value|date('Y-m-d H:i:s') }}</li>
+            {% endfor %}
+    </ul>
+{% endif %}

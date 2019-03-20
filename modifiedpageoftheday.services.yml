@@ -1,0 +1,5 @@
+services:
+    modifiedpageoftheday.currentday:
+        class: Drupal\modifiedpageoftheday\Service\CurrentDayService
+        arguments: ['@entity_type.manager','@datetime.time']
+    
