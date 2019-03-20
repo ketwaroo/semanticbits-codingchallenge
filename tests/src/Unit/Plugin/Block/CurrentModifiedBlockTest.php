@@ -12,7 +12,7 @@ use Drupal\Core\DependencyInjection\ContainerBuilder;
 
 /**
  * @coversDefaultClass \Drupal\modifiedpageoftheday\Plugin\Block\CurrentModifiedBlock
- * @group semanticbits_codechallenge
+ * @group modifiedpageoftheday
  */
 class CurrentModifiedBlockTest extends UnitTestCase {
 
