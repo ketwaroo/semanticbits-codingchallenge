@@ -53,7 +53,7 @@ class CurrentModifiedBlock extends BlockBase {
             '#max'           => 50,
             '#step'          => 1,
             '#title'         => 'Page Limit',
-            '#title'         => 'Max number of currently day posts to show',
+            '#desctiption'   => 'Max number of currently day posts to show',
         ];
 
         return $form;

@@ -22,7 +22,7 @@ class CurrentDayService {
     }
 
     /**
-     * 
+     * Fetches nodes that were modified on the current day.
      * @param int $limit 
      * @return NodeInterface[] Array of nodes.
      */
@@ -41,8 +41,13 @@ class CurrentDayService {
         return $nodeStorage->loadMultiple($nids);
     }
 
+    /**
+     * Determines timestamp at 00:00:00 of current request day.
+     * 
+     * @return int Unix timestamp
+     */
     protected function getCurrentDayCutoffTimestamp() {
-        return strtotime('today 00:00:00', \Drupal::time()->getRequestTime());
+        return strtotime('today 00:00:00', $this->time->getRequestTime());
     }
 
 }
