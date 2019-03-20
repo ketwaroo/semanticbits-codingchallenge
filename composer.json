@@ -1,0 +1,11 @@
+{
+  "name": "drupal/modifiedpageoftheday",
+  "description": "Adds block that will render a list of pages that were modified on current day..",
+  "type": "drupal-module",
+  "authors": [
+    {
+      "name": "Yaasir Ketwaroo"
+    }
+  ],
+  "minimum-stability": "dev"
+}
