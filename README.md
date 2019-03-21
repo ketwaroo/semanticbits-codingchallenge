@@ -23,7 +23,7 @@ display.
 
 ## Automated Testing
 
-The package [`sebastian/peek-and-poke`](https://packagist.org/packages/sebastian/peek-and-poke) is required to run the unit tests. It is used for inspecting and setting protected elements in the classes under test. It is recommended to install in the root composer.json via `composer requrie --dev sebastian/peek-and-poke`,
+The package [`sebastian/peek-and-poke`](https://packagist.org/packages/sebastian/peek-and-poke) is required to run the unit tests. It is used for inspecting and setting protected elements in the classes under test.
 
 In a Drupal instance with dev packages installed and once phpunit and required packages are set up, the unit
 tests can be run as follows:
