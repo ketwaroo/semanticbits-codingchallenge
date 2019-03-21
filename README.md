@@ -23,13 +23,15 @@ display.
 
 ## Automated Testing
 
-In a Drupal instance with dev packages installed and phpunit set up, the unit
+The package [`sebastian/peek-and-poke`](https://packagist.org/packages/sebastian/peek-and-poke) is required to run the unit tests. It is used for inspecting and setting protected elements in the classes under test. It is recommended to install in the root composer.json via `composer requrie --dev sebastian/peek-and-poke`,
+
+In a Drupal instance with dev packages installed and once phpunit and required packages are set up, the unit
 tests can be run as follows:
 
 ```
 > cd <web directory>
 
-> phpunit -c core/phpunit.xml.dist modules/custom/modifiedpageoftheday/tests/
+> ../vendor/bin/phpunit -c core/phpunit.xml.dist modules/custom/modifiedpageoftheday/tests/
 
 ```
 the `phpunit.xml.dist` can be copied to `phpunit.xml` and modified as necessary.
